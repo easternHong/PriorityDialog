@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.eastern.priority">
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VoiceNotify">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.VoiceNotify.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+        </receiver>
+
+        <activity
+            android:name=".queue.EmptyActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".queue.MainActivity1"
+            android:exported="true"/>
+        <activity
+            android:name=".queue.MainActivity2"
+            android:exported="true"/>
+        <activity
+            android:name=".queue.MainActivity3"
+            android:exported="true"/>
+        <activity
+            android:name=".queue.MainActivity4"
+            android:exported="true"/>
+        <activity
+            android:name=".queue.MainActivity5"
+            android:exported="true"/>
+        <activity
+            android:name=".queue.MainActivity6"
+            android:exported="true"/>
+    </application>
+
+</manifest>
